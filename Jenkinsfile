@@ -10,6 +10,7 @@ pipeline {
         }
         stage('Run') {
             steps {
+                echo 'Running..'
                 sh "./a.out"
             }
         }
