@@ -5,12 +5,12 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh build.sh
+                sh "./build.sh"
             }
         }
         stage('Run') {
             steps {
-                ./a.out
+                sh "./a.out"
             }
         }
     }
